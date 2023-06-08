@@ -5,90 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexcent</title>
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <!-- page header -->
-    <header class="header">
+    <!-- header page -->
+    <header class="header__page">
         <div class="container header__container">
-            <a class="logo header__logo" href="./index.html">nexcent</a>
+            <a class="link logo header__logo" href="./index.html">
+                <svg class="logo__icon">
+                    <use href="./images/sprite.svg#logo"></use>
+                </svg>
+                nexcent
+            </a>
             <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">home</li>
-                    <li class="navigation__item">features</li>
-                    <li class="navigation__item">community</li>
-                    <li class="navigation__item">blog</li>
-                    <li class="navigation__item">pricing</li>
+                <ul class="navigation__list list">
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">features</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">community</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">blog</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">pricing</a>
+                    </li>
                 </ul>
             </nav>
-            <button class="reg-btn">register now</button>
+            <button class="button reg-btn">register now
+                <svg class="button_icon">
+                    <use href="./images/sprite.svg#right"></use>
+                </svg>
+            </button>
+
+            <button class="button mobile-menu__button">
+                <svg class="icon mobile-menu__icon">
+                    <use class="mobile-menu__icon--burger" href="./images/sprite.svg#burger"></use>
+                    <use class="mobile-menu__icon--close is-hidden" href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
+    <!-- mobile menu -->
+    <section class="mobile-menu">
+        <div class="container">
+            <nav class="mob-menu__nav">
+                <ul class="navigation__list list">
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">features</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">community</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">blog</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#">pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button reg-btn">register now
+                <svg class="button_icon">
+                    <use href="./images/sprite.svg#right"></use>
+                </svg>
+            </button>
+        </div>
+    </section>
+
     <main>
         <!-- hero section -->
-        <section class="hero">
-            <h1>Lessons and insights from 8 years</h1>
-            <p>Where to grow your business as a photographer: site or social media?</p>
-            <button>register</button>
+        <section class="section hero__section">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="title hero__title">Lessons and insights from 8 years</h1>
+                    <p class="text hero__text">Where to grow your business as a photographer: site or social media?</p>
+                    <button class="button reg__btn">register</button>
+                </div>
+                    <svg class="hero__icon">
+                        <use href="./images/sprite.svg#illustration"></use>
+                    </svg>
+                </div>
         </section>
 
         <!-- clients section -->
         <section class="section clients">
-            <h2 class="title clients__title">Our Clients</h2>
-            <p class="text clients__text">We have been working with some Fortune 500+ clients</p>
-            <ul class="clients__list">
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-            </ul>
+            <div class="container clients__container">
+                <h2 class="title clients__title">Our Clients</h2>
+                <p class="text clients__text">We have been working with some Fortune 500+ clients</p>
+                <ul class="list clients__list">
+                    <li class="clients__item"></li>
+                    <li class="clients__item"></li>
+                    <li class="clients__item"></li>
+                    <li class="clients__item"></li>
+                    <li class="clients__item"></li>
+                    <li class="clients__item"></li>
+                    <li class="clients__item"></li>
+                </ul>
+            </div>
         </section>
 
         <!-- community section -->
         <section class="section community">
-            <h2 class="title community__title">Manage your entire community in a single system</h2>
-            <p class="text community__text">Who is Nextcent suitable for?</p>
-            <ul class="list community__list">
-                <li class="community__item">
-                    <h3>Membership Organisations</h3>
-                    <p>Our membership management software provides full automation of membership renewals and payments</p>
-                </li>
-                <li class="community__item">
-                    <h3>National Associations</h3>
-                    <p>Our membership management software provides full automation of membership renewals and payments</p>
-                </li>
-                <li class="community__item">
-                    <h3>Clubs And Groups</h3>
-                    <p>Our membership management software provides full automation of membership renewals and payments</p>
-                </li>
-            </ul>
+            <div class="container community__container">
+                <h2 class="title community__title">Manage your entire community in a single system</h2>
+                <p class="text community__text">Who is Nextcent suitable for?</p>
+                <ul class="list community__list">
+                    <li class="community__item">
+                        <h3>Membership Organisations</h3>
+                        <p>Our membership management software provides full automation of membership renewals and payments</p>
+                    </li>
+                    <li class="community__item">
+                        <h3>National Associations</h3>
+                        <p>Our membership management software provides full automation of membership renewals and payments</p>
+                    </li>
+                    <li class="community__item">
+                        <h3>Clubs And Groups</h3>
+                        <p>Our membership management software provides full automation of membership renewals and payments</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- unlock section -->
         <section class="section unlock">
-            <h2 class="title unlock__title">The unseen of spending three years at Pixelgrade</h2>
-            <p class="text unlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
-            <button class="button unlock__btn">learn more</button>
+            <div class="container unlock__container">
+                <h2 class="title unlock__title">The unseen of spending three years at Pixelgrade</h2>
+                <p class="text unlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                <button class="button unlock__btn">learn more</button>
+            </div>
         </section>
 
         <!-- achievements section -->
         <section class="section achievements">
-            <h2 class="title achievements__title">Helping a local business reinvent itself</h2>
-            <p class="text achievements__text">We reached here with our hard work and dedication</p>
-            <ul class="achievements__list">
-                <li class="achievements__item">members</li>
-                <li class="achievements__item">clubs</li>
-                <li class="achievements__item">event bookings</li>
-                <li class="achievements__item">payments</li>
-            </ul>
+            <div class="container achievements__container">
+                <h2 class="title achievements__title">Helping a local business reinvent itself</h2>
+                <p class="text achievements__text">We reached here with our hard work and dedication</p>
+                <ul class="achievements__list">
+                    <li class="achievements__item">members</li>
+                    <li class="achievements__item">clubs</li>
+                    <li class="achievements__item">event bookings</li>
+                    <li class="achievements__item">payments</li>
+                </ul>
+            </div>
         </section>
 
         <!-- calender section -->
         <section class="section calender">
-            <div class="container">
+            <div class="container calender__container">
                 <h2 class="text calender__text">How to design your site footer like we did</h2>
                 <p class="text calender_text">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
                 <button class="button calender__btn">learn more</button>
@@ -96,12 +169,12 @@
         </section>
 
         <!-- customers section -->
-        <section class="section">
-            <div class="container">
+        <section class="section customers">
+            <div class="container customers__container">
                 <p class="text customers__text">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
                 <h2 class="title customers__title">Tim Smith</h2>
                 <p class="customers__subtitle">British Dragon Boat Racing Association</p>
-                <ul class="customers__list">
+                <ul class="list customers__list">
                     <li class="customers__item"></li>
                     <li class="customers__item"></li>
                     <li class="customers__item"></li>
@@ -114,8 +187,8 @@
         </section>
 
         <!-- updates section -->
-        <section class="section">
-            <div class="container">
+        <section class="section updates">
+            <div class="container updates__container">
                 <h2 class="title updates__title">Caring is the new marketing</h2>
                 <p class="text updates__text">The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
                 <ul class="list updates__list">
@@ -137,7 +210,7 @@
 
         <!-- demo section -->
         <section class="section demo">
-            <div class="container">
+            <div class="container demo__container">
                 <h2 class="title demo__title">Pellentesque suscipit fringilla libero eu.</h2>
                 <button class="button demo__btn">Get a Demo</button>
             </div>
@@ -148,7 +221,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="company__info">
-                <a class="logo footer__logo" href="./index.html">nexcent</a>
+                <a class="link logo footer__logo" href="./index.html">nexcent</a>
                 <p class="company__copyright">Copyright © 2020 Landify UI Kit. All rights reserved</p>
                 <ul class="social-links">
                     <li class="social-links__item"></li>
@@ -158,13 +231,13 @@
                 </ul>
             </div>
             <div class="company__links">
-                <ul class="company__list"></ul>
-                <ul class="support__list"></ul>
-                <ul class="subscription__list">
+                <ul class="list company__list"></ul>
+                <ul class="list support__list"></ul>
+                <ul class="list subscription__list">
                     <li class="subscription__item">
                         <b>Stay up to date</b>
                     </li>
-                    <li class="subscription__item">
+                    <li class="list subscription__item">
                         <form class="subscription__form" action="">
                             <label class="subscription__label" for="">
                                 <input class="subscription__input" type="email" name="email" placeholder="Your email address">
@@ -176,5 +249,7 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
