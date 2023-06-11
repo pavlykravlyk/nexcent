@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexcent</title>
     <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -37,8 +40,8 @@
                     </li>
                 </ul>
             </nav>
-            <button class="button reg-btn">register now
-                <svg class="button_icon">
+            <button class="button reg-btn header__reg-btn">register now
+                <svg class="reg-btn__icon">
                     <use href="./images/sprite.svg#right"></use>
                 </svg>
             </button>
@@ -53,7 +56,7 @@
     </header>
 
     <!-- mobile menu -->
-    <section class="mobile-menu">
+    <section class="mobile-menu section">
         <div class="container">
             <nav class="mob-menu__nav">
                 <ul class="navigation__list list">
@@ -75,7 +78,7 @@
                 </ul>
             </nav>
             <button class="button reg-btn">register now
-                <svg class="button_icon">
+                <svg class="reg-btn__icon">
                     <use href="./images/sprite.svg#right"></use>
                 </svg>
             </button>
@@ -89,48 +92,105 @@
                 <div class="hero__content">
                     <h1 class="title hero__title">Lessons and insights from 8 years</h1>
                     <p class="text hero__text">Where to grow your business as a photographer: site or social media?</p>
-                    <button class="button reg__btn">register</button>
+                    <button class="button reg-btn">register</button>
                 </div>
-                    <svg class="hero__icon">
-                        <use href="./images/sprite.svg#illustration"></use>
-                    </svg>
+                <svg class="hero__icon">
+                    <use href="./images/sprite.svg#illustration"></use>
+                </svg>
                 </div>
         </section>
 
         <!-- clients section -->
-        <section class="section clients">
+        <section class="section clients__section">
             <div class="container clients__container">
                 <h2 class="title clients__title">Our Clients</h2>
                 <p class="text clients__text">We have been working with some Fortune 500+ clients</p>
                 <ul class="list clients__list">
-                    <li class="clients__item"></li>
-                    <li class="clients__item"></li>
-                    <li class="clients__item"></li>
-                    <li class="clients__item"></li>
-                    <li class="clients__item"></li>
-                    <li class="clients__item"></li>
-                    <li class="clients__item"></li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                             <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__item">
+                        <a class="clients__link" href="#">
+                            <svg class="clients__icon">
+                                <use href="./images/sprite.svg#client3"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
 
         <!-- community section -->
-        <section class="section community">
+        <section class="section community__section">
             <div class="container community__container">
                 <h2 class="title community__title">Manage your entire community in a single system</h2>
                 <p class="text community__text">Who is Nextcent suitable for?</p>
                 <ul class="list community__list">
                     <li class="community__item">
-                        <h3>Membership Organisations</h3>
-                        <p>Our membership management software provides full automation of membership renewals and payments</p>
+                        <a class="community__link" href="#">
+                            <svg class="community__icon">
+                                <use href="./images/sprite.svg#member1"></use>
+                            </svg>
+                        </a>
+                        <h3 class="community__subtitle">Membership Organisations</h3>
+                        <p class="community__subtext">Our membership management software provides full automation of membership renewals and payments</p>
                     </li>
                     <li class="community__item">
-                        <h3>National Associations</h3>
-                        <p>Our membership management software provides full automation of membership renewals and payments</p>
+                        <a class="community__link" href="#">
+                            <svg class="community__icon">
+                                <use href="./images/sprite.svg#member2"></use>
+                            </svg>
+                        </a>
+                        <h3 class="community__subtitle">National Associations</h3>
+                        <p class="community__subtext">Our membership management software provides full automation of membership renewals and payments</p>
                     </li>
                     <li class="community__item">
-                        <h3>Clubs And Groups</h3>
-                        <p>Our membership management software provides full automation of membership renewals and payments</p>
+                        <a class="community__link" href="#">
+                            <svg class="community__icon">
+                                <use href="./images/sprite.svg#club"></use>
+                            </svg>
+                        </a>
+                        <h3 class="community__subtitle">Clubs And Groups</h3>
+                        <p class="community__subtext">Our membership management software provides full automation of membership renewals and payments</p>
                     </li>
                 </ul>
             </div>
