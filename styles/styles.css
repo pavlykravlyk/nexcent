@@ -73,6 +73,13 @@ body {
   align-items: center;
   gap: 6px;
 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: capitalize;
+
   color: var(--white-color);
   background-color: var(--accent-color);
   border-radius: 3px;
@@ -178,9 +185,9 @@ body {
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms linear,
-    transform 250ms linear,
-    visibility 250ms linear;
+  transition: opacity 600ms ease-in,
+    transform 500ms ease-in,
+    visibility 500ms ease-in;
 }
 
 .mob-menu__nav {
@@ -376,6 +383,67 @@ body {
   z-index: 2;
 }
 
+/* unlock section */
+
+.unlock__container {
+  text-align: center;
+}
+
+.unlock__icon {
+  width: 308px;
+  height: 229px;
+}
+
+.unlock__content {
+  margin-top: 22px;
+  text-align: left;
+}
+
+.unlock__title {
+  margin-bottom: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+.unlock__text {
+  margin-bottom: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+.unlock__btn {
+  padding: 10px 22px;
+  min-width: 105px;
+}
+
+/* achievements section */
+.achievements__title {
+  margin-bottom: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+.achievements__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #18191F;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -452,6 +520,25 @@ body {
   .community__item {
     flex-basis: calc(100%/2 - 44px);
   }
+
+  /* unlock section */
+  .unlock__container {
+    display: flex;
+    gap: 34px;
+  }
+
+  .unlock__content {
+    margin-top: 0;
+  }
+
+  .unlock__icon {
+    flex-basis: 40%;
+  }
+
+  .unlock__content {
+    flex-basis: 60%;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {

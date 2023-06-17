@@ -197,11 +197,16 @@
         </section>
 
         <!-- unlock section -->
-        <section class="section unlock">
+        <section class="section unlock__section">
             <div class="container unlock__container">
-                <h2 class="title unlock__title">The unseen of spending three years at Pixelgrade</h2>
-                <p class="text unlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
-                <button class="button unlock__btn">learn more</button>
+                <svg class="unlock__icon">
+                    <use href="./images/sprite.svg#rafiki"></use>
+                </svg>
+                <div class="unlock__content">
+                    <h2 class="title unlock__title">The unseen of spending three years at Pixelgrade</h2>
+                    <p class="text unlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                    <button class="button unlock__btn">learn more</button>
+                </div>
             </div>
         </section>
 
@@ -210,11 +215,54 @@
             <div class="container achievements__container">
                 <h2 class="title achievements__title">Helping a local business reinvent itself</h2>
                 <p class="text achievements__text">We reached here with our hard work and dedication</p>
-                <ul class="achievements__list">
-                    <li class="achievements__item">members</li>
-                    <li class="achievements__item">clubs</li>
+                <ul class="achievements__list list">
+                    <li class="achievements__item">
+                        <a class="achievements__link link" href="#">
+                            <svg class="achievements__icon">
+                                <use href="./images/sprite.svg#member1"></use>
+                            </svg>
+                            <div class="achievements__content">
+                                <span class="achievements__number">2,245,341</span>
+                                <p class="achievements__sescription">members</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="achievements__item">
+                        <a class="achievements__link link" href="#">
+                            <svg class="achievements__icon">
+                                <use href="./images/sprite.svg#club"></use>
+                            </svg>
+                            <div class="achievements__content">
+                                <span class="achievements__number">46,328</span>
+                                <p class="achievements__sescription">clubs</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="achievements__item">
+                        <a class="achievements__link link" href="#">
+                            <svg class="achievements__icon">
+                                <use href="./images/sprite.svg#event"></use>
+                            </svg>
+                            <div class="achievements__content">
+                                <span class="achievements__number">828,867</span>
+                                <p class="achievements__sescription">event bookings</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="achievements__item">
+                        <a class="achievements__link link" href="#">
+                            <svg class="achievements__icon">
+                                <use href="./images/sprite.svg#payment"></use>
+                            </svg>
+                            <div class="achievements__content">
+                                <span class="achievements__number">1,926,436</span>
+                                <p class="achievements__sescription">payments</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li class="achievements__item">clubs</li>
                     <li class="achievements__item">event bookings</li>
-                    <li class="achievements__item">payments</li>
+                    <li class="achievements__item">payments</li> -->
                 </ul>
             </div>
         </section>
