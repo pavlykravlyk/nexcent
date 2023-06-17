@@ -213,17 +213,19 @@
         <!-- achievements section -->
         <section class="section achievements">
             <div class="container achievements__container">
-                <h2 class="title achievements__title">Helping a local business reinvent itself</h2>
-                <p class="text achievements__text">We reached here with our hard work and dedication</p>
+                <div class="achievements__wrapper">
+                    <h2 class="title achievements__title">Helping a local business reinvent itself</h2>
+                    <p class="text achievements__text">We reached here with our hard work and dedication</p>
+                </div>
                 <ul class="achievements__list list">
                     <li class="achievements__item">
                         <a class="achievements__link link" href="#">
                             <svg class="achievements__icon">
-                                <use href="./images/sprite.svg#member1"></use>
+                                <use href="./images/sprite.svg#counts"></use>
                             </svg>
                             <div class="achievements__content">
                                 <span class="achievements__number">2,245,341</span>
-                                <p class="achievements__sescription">members</p>
+                                <p class="achievements__description">members</p>
                             </div>
                         </a>
                     </li>
@@ -234,7 +236,7 @@
                             </svg>
                             <div class="achievements__content">
                                 <span class="achievements__number">46,328</span>
-                                <p class="achievements__sescription">clubs</p>
+                                <p class="achievements__description">clubs</p>
                             </div>
                         </a>
                     </li>
@@ -245,7 +247,7 @@
                             </svg>
                             <div class="achievements__content">
                                 <span class="achievements__number">828,867</span>
-                                <p class="achievements__sescription">event bookings</p>
+                                <p class="achievements__description">event bookings</p>
                             </div>
                         </a>
                     </li>
@@ -256,13 +258,10 @@
                             </svg>
                             <div class="achievements__content">
                                 <span class="achievements__number">1,926,436</span>
-                                <p class="achievements__sescription">payments</p>
+                                <p class="achievements__description">payments</p>
                             </div>
                         </a>
                     </li>
-                    <!-- <li class="achievements__item">clubs</li>
-                    <li class="achievements__item">event bookings</li>
-                    <li class="achievements__item">payments</li> -->
                 </ul>
             </div>
         </section>
@@ -270,27 +269,80 @@
         <!-- calender section -->
         <section class="section calender">
             <div class="container calender__container">
-                <h2 class="text calender__text">How to design your site footer like we did</h2>
-                <p class="text calender_text">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
-                <button class="button calender__btn">learn more</button>
+                <svg class="calender__icon">
+                    <use href="./images/sprite.svg#pana"></use>
+                </svg>
+                <div class="calender__content">
+                    <h2 class="text calender__title">How to design your site footer like we did</h2>
+                    <p class="text calender__text">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                    <button class="button calender__btn">learn more</button>
+                </div>
             </div>
         </section>
 
         <!-- customers section -->
         <section class="section customers">
             <div class="container customers__container">
-                <p class="text customers__text">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
-                <h2 class="title customers__title">Tim Smith</h2>
-                <p class="customers__subtitle">British Dragon Boat Racing Association</p>
-                <ul class="list customers__list">
-                    <li class="customers__item"></li>
-                    <li class="customers__item"></li>
-                    <li class="customers__item"></li>
-                    <li class="customers__item"></li>
-                    <li class="customers__item"></li>
-                    <li class="customers__item"></li>
-                </ul>
-                <button class="button customers__btn">meet all customers</button>
+                <picture class="customers__picture">
+                    <source srcset="./images/tim-smith@1x.jpg 1x, ./images/tim-smith@2x.jpg 2x">
+                    <img class="customers__image" src="#" alt="Tim Smith">
+                </picture>
+                <div class="customers__content">
+                    <p class="text customers__text">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                    <h2 class="title customers__title">Tim Smith</h2>
+                    <p class="customers__subtitle text">British Dragon Boat Racing Association</p>
+                    <ul class="customers__list list">
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">
+                                <svg class="customers__icon icon">
+                                    <use href="./images/sprite.svg#client1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">
+                                <svg class="customers__icon icon">
+                                    <use href="./images/sprite.svg#client2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">
+                                <svg class="customers__icon icon">
+                                    <use href="./images/sprite.svg#client3"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">
+                                <svg class="customers__icon icon">
+                                    <use href="./images/sprite.svg#client4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">
+                                <svg class="customers__icon icon">
+                                    <use href="./images/sprite.svg#client5"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">
+                                <svg class="customers__icon icon">
+                                    <use href="./images/sprite.svg#client6"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a class="customers__link link" href="#">meet all customers
+                                <svg class="customers__icon--btn icon">
+                                    <use href="./images/sprite.svg#right"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -317,16 +369,20 @@
         </section>
 
         <!-- demo section -->
-        <section class="section demo">
+        <section class="section demo__section">
             <div class="container demo__container">
                 <h2 class="title demo__title">Pellentesque suscipit fringilla libero eu.</h2>
-                <button class="button demo__btn">Get a Demo</button>
+                <button class="button demo__btn">Get a Demo
+                    <svg class="demo__icon">
+                        <use href="./images/sprite.svg#right"></use>
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
 
     <!-- page footer -->
-    <footer class="footer">
+    <footer class="footer__section">
         <div class="container footer__container">
             <div class="company__info">
                 <a class="link logo footer__logo" href="./index.html">nexcent</a>
