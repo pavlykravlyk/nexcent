@@ -211,7 +211,7 @@
         </section>
 
         <!-- achievements section -->
-        <section class="section achievements">
+        <section class="section achievements__section">
             <div class="container achievements__container">
                 <div class="achievements__wrapper">
                     <h2 class="title achievements__title">Helping a local business reinvent itself</h2>
@@ -281,7 +281,7 @@
         </section>
 
         <!-- customers section -->
-        <section class="section customers">
+        <section class="section customers__section">
             <div class="container customers__container">
                 <picture class="customers__picture">
                     <source srcset="./images/tim-smith@1x.jpg 1x, ./images/tim-smith@2x.jpg 2x">
@@ -353,16 +353,46 @@
                 <p class="text updates__text">The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
                 <ul class="list updates__list">
                     <li class="updates__item">
-                        <p class="updates__content">Creating Streamlined Safeguarding Processes with OneRen</p>
-                        <button class="button updates__btn">readmore</button>
+                        <picture class="updates__picture">
+                            <source srcset="./images/update1@1x.jpg 1x, ./images/update1@2x.jpg 2x">
+                            <img class="updates__image" src="#" alt="">
+                        </picture>
+                        <div class="updates__description">
+                            <p class="updates__content text">Creating Streamlined Safeguarding Processes with OneRen</p>
+                            <a class="updates__link link" href="#">readmore
+                                <svg class="updates__icon">
+                                    <use href="./images/sprite.svg#right"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                     <li class="updates__item">
-                        <p class="updates__content">What are your safeguarding responsibilities and how can you manage them?</p>
-                        <button class="button updates__btn">readmore</button>
+                        <picture class="updates__picture">
+                            <source srcset="./images/update2@1x.jpg 1x, ./images/update2@2x.jpg 2x">
+                            <img class="updates__image" src="#" alt="">
+                        </picture>
+                        <div class="updates__description">
+                            <p class="updates__content text">What are your safeguarding responsibilities and how can you manage them?</p>
+                            <a class="updates__link link" href="#">readmore
+                                <svg class="updates__icon">
+                                    <use href="./images/sprite.svg#right"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                     <li class="updates__item">
-                        <p class="updates__content">Revamping the Membership Model with Triathlon Australia</p>
-                        <button class="button updates__btn">readmore</button>
+                        <picture class="updates__picture">
+                            <source srcset="./images/update3@1x.jpg 1x, ./images/update3@2x.jpg 2x">
+                            <img class="updates__image" src="#" alt="">
+                        </picture>
+                        <div class="updates__description">
+                            <p class="updates__content text">Revamping the Membership Model with Triathlon Australia</p>
+                            <a class="updates__link link" href="#">readmore
+                                <svg class="updates__icon">
+                                    <use href="./images/sprite.svg#right"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -385,27 +415,79 @@
     <footer class="footer__section">
         <div class="container footer__container">
             <div class="company__info">
-                <a class="link logo footer__logo" href="./index.html">nexcent</a>
-                <p class="company__copyright">Copyright © 2020 Landify UI Kit. All rights reserved</p>
-                <ul class="social-links">
-                    <li class="social-links__item"></li>
-                    <li class="social-links__item"></li>
-                    <li class="social-links__item"></li>
-                    <li class="social-links__item"></li>
+                <a class="link logo footer__logo" href="./index.html">
+                    <svg class="logo__icon footer__logo--icon">
+                        <use href="./images/sprite.svg#logo"></use>
+                    </svg>
+                    nexcent
+                </a>
+                <p class="company__copyright text">Copyright © 2020 Landify UI Kit.<br/>
+                    All rights reserved</p>
+                <ul class="social-links__list list">
+                    <li class="social-links__item">
+                        <a class="social-links__link link" href="https://www.instagram.com/" target=“_blank“ rel=“noopener noreferrer nofollow“>
+                            <svg class="social-links__icon">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link link" href="https://dribbble.com/" target=“_blank“ rel=“noopener noreferrer nofollow“>
+                            <svg class="social-links__icon">
+                                <use href="./images/sprite.svg#dribbble"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link link" href="https://twitter.com/" target=“_blank“ rel=“noopener noreferrer nofollow“>
+                            <svg class="social-links__icon">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link link" href="https://www.youtube.com/" target=“_blank“ rel=“noopener noreferrer nofollow“>
+                            <svg class="social-links__icon">
+                                <use href="./images/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="company__links">
-                <ul class="list company__list"></ul>
-                <ul class="list support__list"></ul>
+                <div class="company__wrapper">
+                    <h3 class="company__title title">company</h3>
+                    <ul class="list company__list">
+                        <li class="company__item">About us</li>
+                        <li class="company__item">Blog</li>
+                        <li class="company__item">Contact us</li>
+                        <li class="company__item">Pricing</li>
+                        <li class="company__item">Testimonials</li>
+                    </ul>
+                </div>
+                <div class="support__wrapper">
+                    <h3 class="support__title title">Support</h3>
+                    <ul class="list support__list">
+                        <li class="support__item">Help center</li>
+                        <li class="support__item">Terms of service</li>
+                        <li class="support__item">Legal</li>
+                        <li class="support__item">Privacy policy</li>
+                        <li class="support__item">Status</li>
+                    </ul>
+                </div>
                 <ul class="list subscription__list">
                     <li class="subscription__item">
-                        <b>Stay up to date</b>
+                        <b class="subscription__slog">Stay up to date</b>
                     </li>
                     <li class="list subscription__item">
                         <form class="subscription__form" action="">
                             <label class="subscription__label" for="">
                                 <input class="subscription__input" type="email" name="email" placeholder="Your email address">
-                                <button class="button subscription__btn" type="submit"></button>
+                                <button class="subscription__btn" type="submit">
+                                    <svg class="subscription__icon">
+                                        <use href="./images/sprite.svg#send"></use>
+                                    </svg>
+                                </button>
                             </label>
                         </form>
                     </li>

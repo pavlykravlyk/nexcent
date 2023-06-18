@@ -38,10 +38,10 @@
                 d="M21.333 21.333l4.391-4.391c0.521-0.521 0.521-1.365 0-1.886l-4.391-4.391M25.333 16h-18.667"></path>
         </symbol>
         <symbol id="send" viewBox="0 0 32 32">
-            <path fill="none" stroke="#717171"
+            <path fill="none" stroke="currentColor"
                 stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2"
                 d="M26.298 3.679c1.251-0.417 2.441 0.773 2.024 2.024l-6.742 20.226c-0.438 1.313-2.224 1.489-2.909 0.285l-4.127-7.257c-0.356-0.626-0.874-1.144-1.5-1.5l-7.257-4.127c-1.204-0.684-1.029-2.471 0.285-2.909l20.226-6.742z"></path>
-            <path fill="none" stroke="#717171"
+            <path fill="none" stroke="currentColor"
                 stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
                 stroke-width="2" d="M17.047 14.953l-2.667 2.667"></path>
         </symbol>
