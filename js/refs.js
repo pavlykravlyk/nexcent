@@ -4,6 +4,7 @@ const refs = {
     menuBurgerIcon: document.querySelector(".mobile-menu__icon--burger"),
     menuCloseIcon: document.querySelector(".mobile-menu__icon--close"),
     bodyEL: document.querySelector("body"),
+    scrollBtn: document.querySelector(".scroll-btn"),
 };
 
-export const {mobileMenuBtn, mobileMenu, menuBurgerIcon, menuCloseIcon, bodyEL} = refs
+export const {mobileMenuBtn, mobileMenu, menuBurgerIcon, menuCloseIcon, scrollBtn, bodyEL} = refs

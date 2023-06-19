@@ -829,6 +829,44 @@ body {
   color: currentColor;
 }
 
+.scroll-btn {
+  border-radius: 6px;
+  font-size: 18px;
+  background-color: rgba(190, 190, 190, 0.5);
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 750ms ease;
+  color: var(--accent-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-btn:hover, .scroll-btn:focus {
+  background: var(--accent-color);
+  color: var(--white-color);
+}
+
+.scroll-btn__icon {
+  transform: rotate(-90deg);
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.show-scroll-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -837,7 +875,6 @@ body {
   }
 
   /* achievements section */
-
   .achievements__list {
     display: flex;
     flex-wrap: wrap;
@@ -1037,7 +1074,7 @@ body {
 /* //////////////////////////////////////////////// */
 .menu-open {
   overflow-y: hidden;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .is-open {
