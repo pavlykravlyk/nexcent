@@ -193,6 +193,21 @@ body {
 .hero__container {
   padding-top: 33px;
   padding-bottom: 33px;
+  overflow: hidden;
+}
+
+.hero__list {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+}
+
+.hero__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .hero__content {
@@ -219,6 +234,28 @@ body {
 
 .hero__text {
   margin-bottom: 22px;
+}
+
+.slider__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.slider__btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(76, 175, 79, 0.3);
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.slider__btn:hover, .slider__btn:focus {
+  background-color: var(--accent-color);
 }
 
 /* clients section */
@@ -910,12 +947,13 @@ body {
 
     /* hero */
   .hero__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 72px;
     padding-top: 66px;
     padding-bottom: 66px;
+  }
+
+  .hero__item {
+    flex-direction: row;
+    gap: 72px;
   }
 
   .hero__content {
@@ -1025,6 +1063,11 @@ body {
     padding-right: 100px;
   }
 
+  /* hero section */
+  .hero__list {
+    gap: 100px;
+  }
+
   /* community */
   .community__list {
     gap: 22px 44px;
@@ -1048,7 +1091,7 @@ body {
 /* //////////////////////////////////////////////// */
 .menu-open {
   overflow-y: hidden;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .is-open {
